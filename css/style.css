@@ -258,7 +258,7 @@ footer {
 		padding: 10px;
 		box-sizing: border-box;
 		text-align: center;
-		float: left;
+		float: none;
 	}
 	.kotak .col-2 p {
 	margin: 15px 0;
