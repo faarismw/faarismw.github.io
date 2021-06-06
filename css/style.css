@@ -241,7 +241,7 @@ footer {
 		transform: rotate(360deg);
 	}
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 720px) {
 	.container {
 		width: 80%;
 	}
@@ -264,8 +264,8 @@ footer {
 	margin: 15px 0;
 	}
 	.etalase {
-		width: 220px;
-		height: 220px;
+		width: 150px;
+		height: 150px;
 	}
 	.medsos {
 		padding: 10px 0;
