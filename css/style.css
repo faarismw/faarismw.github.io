@@ -95,6 +95,23 @@ section h3 {
 	padding: 10px;
 	text-align: center;
 }
+
+.tombol ul {
+	float: none;
+	text-align: center;
+}
+.tombol ul li {
+	display: inline-block;
+}
+.tombol ul li a {
+	width: 85px;
+	height: 30px;
+	padding-top: 15px;
+	display: inline-block;
+	background-color:  #1AA5CD;
+	color: #fff;
+	border-radius: 10%;
+}
 .catalog {
 	background-color: #FFF;
 	padding: 30px;
@@ -135,19 +152,6 @@ section h3 {
 	font-size: 40px;
 	margin: 0 auto;
 	padding-top: 20px;
-}
-.tombol {
-	width: 100px;
-	border: 1px solid;
-	border-radius: 10%;
-	color: #1AA5CD;
-	text-align: center;
-	line-height: 70px;
-	margin: 0 auto;
-	background-color: #1AA5CD;
-}
-.tombol p{
-	color: #fff;
 }
 .contact {
 	background-color:#F1FCFF;
@@ -226,22 +230,12 @@ footer {
 	padding-top: 25px;
 	padding-bottom: 25px;
 }
-.home {
-	text-align: center;
-	padding: 30px;
-}
-.home p {
-	word-spacing: 2px;
-	line-height: 20px;
-	padding: 10px;
-	text-align: center;
-}
 @keyframes muter {
 	100% {
 		transform: rotate(360deg);
 	}
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 768px) {
 	.container {
 		width: 80%;
 	}
@@ -258,14 +252,29 @@ footer {
 		padding: 10px;
 		box-sizing: border-box;
 		text-align: center;
-		float: none;
+		float: left;
 	}
 	.kotak .col-2 p {
 	margin: 15px 0;
 	}
 	.etalase {
-		width: 150px;
-		height: 150px;
+		width: 180px;
+		height: 180px;
+	}
+	.box .col-4 {
+		text-align: center;
+		width: 50%;
+	}
+	.icon {
+		width: 50px;
+		height: 50px;
+		border: 1px solid;
+		line-height: 50px;
+		font-size: 30px;
+		margin: 0 auto;
+	}
+	.box .col-4 h4 {
+		margin: 15px 0;
 	}
 	.medsos {
 		padding: 10px 0;
