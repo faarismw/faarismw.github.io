@@ -248,18 +248,17 @@ footer {
 		float: none;
 	}
 	.kotak .col-2 {
-		width: 100%;
+		width: 50%;
 		padding: 10px;
 		box-sizing: border-box;
 		text-align: center;
-		float: none;
 	}
 	.kotak .col-2 p {
 	margin: 15px 0;
 	}
 	.etalase {
-		width: 180px;
-		height: 180px;
+		width: 100px;
+		height: 100px;
 	}
 	.box .col-4 {
 		text-align: center;
