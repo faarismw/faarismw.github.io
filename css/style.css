@@ -247,6 +247,10 @@ footer {
 		text-align: center;
 		float: none;
 	}
+	header ul li a {
+		padding:15px 6px;
+		display: inline-block;
+	}
 	.kotak .col-2 {
 		width: 50%;
 		padding: 10px;
@@ -254,11 +258,11 @@ footer {
 		text-align: center;
 	}
 	.kotak .col-2 p {
-	margin: 15px 0;
+		margin: 15px 0;
 	}
 	.etalase {
-		width: 100px;
-		height: 100px;
+		width: 120px;
+		height: 120px;
 	}
 	.box .col-4 {
 		text-align: center;
