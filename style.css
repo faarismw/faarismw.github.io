@@ -20,7 +20,15 @@
 
 
 
+
+
 /*Semua*/
+
+body {
+	margin: auto;
+}
+
+
 /*Navbar*/
 	.navbar-brand, .nav-link {
 		color: white !important;
@@ -103,17 +111,30 @@
 
 
 
-/*catalog*/
+/*staff*/
+	.staff img {
+		width: 160px;
+		border: 8px solid #cccccc;
+		text-align: center;
 
-/*akhir catalog*/
+	}
+/*akhir staff*/
 
 
 
 /*footer*/
 footer {
-	background-color: #0099ff;
+	background-color: #3f3f3f;
+	margin-top: 0;
+	padding-top: ;
 }
 /*akhir footer*/
+
+
+
+
+
+
 
 
 
@@ -126,8 +147,13 @@ footer {
 
 
 
+
+
+
+
+
 /*Mobile*/
-	@media screen and (max-width: 992px) {
+	@media screen and (max-width: 768px) {
 		.container {
 			width: 80%;
 		}
