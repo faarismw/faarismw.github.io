@@ -20,10 +20,7 @@
 
 
 
-
-
 /*Semua*/
-
 body {
 	margin: auto;
 }
@@ -34,7 +31,6 @@ body {
 		color: white !important;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 	}
-/*Akhir navbar*/
 
 
 /*jumbotron*/
@@ -68,7 +64,6 @@ body {
 		z-index: 1;
 		position: relative;
 	}
-/*akhir jumbotron*/
 
 
 /*info panel*/
@@ -106,17 +101,16 @@ body {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
-/*akhir info panel*/
 
 
 /*info*/
-	.col-md-5 p {
+	.informasi p {
 		text-align: justify;
 	}
 	#info {
 		background-color: #DBE7EF;
 	}
-/*akhir info*/
+
 
 /*contact*/
 	#contact {
@@ -131,8 +125,6 @@ body {
 		text-align: center;
 
 	}
-/*akhir staff*/
-
 
 
 /*footer*/
@@ -141,12 +133,6 @@ footer {
 	margin-top: 0;
 	padding-top: ;
 }
-/*akhir footer*/
-
-
-
-
-
 
 
 
@@ -156,11 +142,6 @@ footer {
 		border-radius: 25px;
 	}
 /*akhir utility*/
-
-
-
-
-
 
 
 
@@ -195,4 +176,3 @@ footer {
 		}
 	}
 /*akhir mobile*/
-
