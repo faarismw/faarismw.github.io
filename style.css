@@ -35,7 +35,7 @@ body {
 
 /*jumbotron*/
 	.jumbotron {
-		background-image: url(img/banner1.jpg);
+		background-image: url(img/banner2.jpg);
 		background-size: cover;
 		height: 600px;
 		margin-top: -75px;
@@ -45,7 +45,7 @@ body {
 	.jumbotron .display-6 {
 		color: #fff;
 		font-weight: 200;
-		text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
 		padding-bottom: 30px;
 	}
 	.jumbotron .display-6 span {
