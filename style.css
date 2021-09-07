@@ -164,38 +164,61 @@ body {
 /*Catalog*/
 	.card, .card img {
 		border-radius: 12px;
-		transition: 0.25s;
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 	}
-	.card:hover{
+	.catalog-card {
+		transition: 0.25s;
+	}
+	.catalog-card:hover{
 		transform: scale(1.08);
 		transition: 0.25s;
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	}
-	.card-body {
+	.catalog-card .card-body {
 		position: absolute;
 	}
-	.card-body {
+	.catalog-card .card-body {
 		visibility: hidden;
 		transition: 0,25s;
 	}
-	.card:hover .card-body {
+	.catalog-card:hover .card-body {
 		visibility: visible;
 		color: white;
 		transition: 0,25s;
 		width: 100%;
 		height: 100%;
 		border-radius: 12px;
-		backdrop-filter: blur(25px);
+		backdrop-filter: blur(10px);
 		background-color: rgba(0, 0, 0, 0.6);
 	}
 
 /*staff*/
-	.staff img{
+	.profile img{
 		width: 130px;
 		border: 8px solid #cccccc;
 		text-align: center;
 		z-index: 6;
+	}
+
+/*footer*/
+footer {
+	background-color: #3f3f3f;
+	margin-top: 0;
+}
+
+
+/*Utility*/
+	.tombol {
+		border-radius: 25px;
+		border: none;
+	}
+	.dropdown-menu {
+		border-radius: 12px;
+		background-color: rgba(0, 0, 0, 0.6);
+		backdrop-filter: blur(25px);
+	}
+	.line {
+		border: 1px solid;
 	}
 	.slider {
 	  width: 100%;
@@ -217,7 +240,6 @@ body {
 	  scroll-snap-align: start;
 	  flex-shrink: 0;
 	  width: 220px;
-	  height: 260px;
 	  margin: 0 10px 0 10px;
 	  transform-origin: center center;
 	  transform: scale(1);
@@ -228,25 +250,44 @@ body {
 	  overflow: hidden;
 	  font-size: 100%;
 	}
-/*footer*/
-footer {
-	background-color: #3f3f3f;
-	margin-top: 0;
-}
-
-
-/*Utility*/
-	.tombol {
-		border-radius: 25px;
-		border: none;
+	.bg-loader {
+		background-color: rgba(255, 255, 255, 0.5);
+		backdrop-filter: blur(15px);
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 9999;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
-	.dropdown-menu {
-		border-radius: 12px;
-		background-color: rgba(0, 0, 0, 0.6);
-		backdrop-filter: blur(25px);
+	.bg-loader p {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 9999;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #0E89A2;
 	}
-	.line {
-		border: 1px solid;
+	.bg-loader .loader {
+		width: 120px;
+		height: 120px;
+		border: 4px solid rgba(255, 255, 255, 0);
+		border-radius: 50%;
+		border-top-color: #0E89A2;
+		border-bottom-color: #0E89A2;
+		animation: muter .8s linear infinite;
+	} 
+	@keyframes muter {
+		100% {
+			transform: rotate(360deg);
+		}
 	}
 /*akhir utility*/
 

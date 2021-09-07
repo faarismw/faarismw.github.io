@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<title>My Profile & Project</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<style type="text/css">
+	.card-project {
+		background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255,222, 255, 0.3));
+		backdrop-filter: blur(20px);
+	}
+	.card-project  p {
+		margin-top: -5px;
+		margin-bottom: 10px;
+	}
+	</style>
+</head>
+<body style="background-image: url(img/banner3.jpg); background-size: cover;">
+
+	<!-- loader -->
+	<div class="bg-loader">
+		<div class="loader"></div>
+		<p>sabar</p>
+	</div>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top">
+		<div class="container">
+		    <a class="navbar-brand" href="index.htm">My Profile & Project</a>
+		      <ul class="navbar-nav ms-auto ">
+		      	<li class="nav-item">
+		          <a class="nav-link" href="index.htm"><i class="fas fa-home"></i></a>
+		        </li>
+		      </ul>
+		</div>
+	</nav>
+	<!-- akhir navbar -->
+
+	<!-- profile & project-->
+	<section class="profile-project content">
+		<div class="container">
+			<!-- profile -->
+			<h2 class="display-5 text-center" style="margin-top: 80px;">My Profile</h2>
+			<div class="slider">
+			  	<div class="slides">
+			  		<div class="card mt-1 mb-3 card-project"  style="width:50vw;">
+						<div class="profile text-center" style="margin:auto;">
+					  		<img src="img/profile2.jpg" class="rounded-circle mb-3 mt-3">
+							<p><strong>Faaris Muwaffaq</strong></p>
+							<p>x7-07-200x</p>
+							<p>Digital Creator</p>
+					  	</div>
+					</div>
+					<div class="card mt-1 mb-3 card-project"  style="width:50vw;">
+						<img src="img/profile2.jpg" class="rounded-circle mb-3 mt-3" style="width:35px; margin: auto;">
+						<div class="text-center" style="margin:auto;">
+					  		<p>Graphic Design</p>
+							<p>Video Editor</p>
+							<p>Music Editor</p>
+							<p>Sketchup</p>
+							<p>HTML & CSS</p>
+							<p>Simple Javascript</p>
+					  	</div>
+					</div>
+			  	</div>
+			</div>
+			<!-- project -->
+			<h2 class="display-5 text-center">My Project</h2>
+			<div class="slides">
+			  	<div class="col-md-3" style="width:250px;">
+			  		<div class="card mt-1 mb-3 card-project">
+						  <img src="img/banner.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h5 class="card-title">FEC Faaris Education Center</h5>
+						    <p class="card-text">Web App E-Learning Berbasis GUI dengan tampilan User Interface modern ala Glassmorphism 2021</p>
+						    <a href="https://risproject.github.io/fec/" class="btn btn-primary tombol">Kunjungi</a>
+						  </div>
+					</div>
+			  	</div>
+			  	<div class="col-md-3" style="width:250px;">
+			  		<div class="card mt-1 mb-3 card-project">
+						  <img src="https://risproject.github.io/ruangbk/img/gambar.jpg" class="card-img-top" alt="yahaha gak keluar gambar">
+						  <div class="card-body">
+						    <h5 class="card-title">RuangBK Care</h5>
+						    <p class="card-text">Web App untuk mencukupi kebutuhan <strong>Rohani dan Psikologi</strong> anda</p>
+						    <a href="https://risproject.github.io/ruangbk/" class="btn btn-primary tombol">Kunjungi</a>
+						  </div>
+					</div>
+			  	</div>
+			  	<div class="col-md-3" style="width:250px;">
+			  		<div class="card mt-1 mb-3 card-project">
+						  <img src="img/banner.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h5 class="card-title">Game Si Botack</h5>
+						    <p class="card-text">Game Berbasis WEB yang dapat memancing emosi. Berani coba?</p>
+						    <a href="https://risproject.github.io/game/" class="btn btn-primary tombol">Kunjungi</a>
+						  </div>
+					</div>
+			  	</div>
+			  	<div class="col-md-3" style="width:250px;">
+			  		<div class="card mt-1 mb-3 card-project">
+						  <img src="img/banner.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h5 class="card-title">ForOS Project</h5>
+						    <p class="card-text">Operating System Berbasis Android Open Source dengan tampilan User Interface modern ala Glassmorphism 2021 dan optimalisasi hardware tinggi</p>
+						    <a href="404" class="btn btn-primary tombol">Kunjungi</a>
+						  </div>
+					</div>
+			  	</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- akhir profile -->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".bg-loader").hide();
+		})
+	</script>
+
+	<script>
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbzgcU0PswNZrdFdZS080Mf5iC1JnvN6-hvKKlFVs19x1eYQdOdFUJ5uv7_W98Vpi53d/exec'
+	  const form = document.forms['your-response']
+	  const btnKirim = document.querySelector('.btn-kirim');
+	  const btnLoading = document.querySelector('.btn-loading');
+	  const myAlert = document.querySelector('.my-alert');
+
+	  form.addEventListener('submit', e => {
+	    e.preventDefault()
+	    btnLoading.classList.toggle('d-none');
+	    btnKirim.classList.toggle('d-none');
+	    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	    	.then(response => {
+	    		btnLoading.classList.toggle('d-none');
+	   			btnKirim.classList.toggle('d-none');
+	   			myAlert.classList.toggle('d-none');
+	   			form.reset();
+	    		console.log('Success!', response)})
+	    	.catch(error => console.error('Error!', error.message))
+	  })
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

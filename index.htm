@@ -152,8 +152,13 @@
 						</div>
 						<div class="col-md-6 informasi">
 							<h2 class="pt-2 display-5">Terimakasih telah mengunjungi <span>Faaris Catalog</span></h2>
-							<p class="pt-2">Untuk iklan / paid promote di instagram & Youtube langsung DM aja.  Yang ingin buat web seperti ini silahkan hubungi staff saya kita bincangkan soal harga. <strong>klik Direct Link untuk melihat project saya</strong></p>
-							<button class="btn btn-secondary dropdown-toggle tombol bg-primary" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">Direct Link</button>
+							<p class="pt-2">Untuk iklan / paid promote di instagram & Youtube langsung DM aja.  Yang ingin buat web seperti ini silahkan hubungi staff saya kita bincangkan soal harga. <strong>klik "My Project" untuk melihat project saya</strong></p>
+							<div class="btn-group">
+							  <button type="button" class="btn btn-primary tombol" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">My Project</button>
+							  <button type="button" id="dropdownMenuButton2" class="btn btn-secondary dropdown-toggle dropdown-toggle-split tombol" data-bs-toggle="dropdown" aria-expanded="false">
+							    <span class="visually-hidden">Toggle Dropdown</span>
+							  </button>
+							  <a href="project.html" class="btn">Visit My Profiles</a>
 							  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
 							  	<li><a class="dropdown-item" href="https://risproject.github.io/fec/">Faaris Education Center</a></li>
 							    <li><hr class="dropdown-divider"></li>
@@ -161,10 +166,13 @@
 							    <li><hr class="dropdown-divider"></li>
 							    <li><a class="dropdown-item" href="https://risprojrct.github.io/game/">Game Si Botack</a></li>
 							    <li><hr class="dropdown-divider"></li>
+							    <li><a class="dropdown-item" href="404">ForOS Project</a></li>
+							    <li><hr class="dropdown-divider"></li>
 							    <li><a class="dropdown-item" href="https://docs.google.com/document/d/1bERzZYytbyFwXnlfKmqqpW5N_oo5d3eVG42e28VOdBc/edit?usp=sharing">Autizm TextArt</a></li>
 							    <li><hr class="dropdown-divider"></li>
 							    <li><a class="dropdown-item" href="https://docs.google.com/spreadsheets/d/1H9htC1qeHMBN_R3HMxdECf5l5HwGB-V1aNDF423jwsU/edit?usp=sharing">Your Response</a></li>
 							  </ul>
+							</div>
 						</div>
 					</div>
 			    </div>
@@ -216,6 +224,47 @@
 					</div>
 			    </div>
 			  </div>
+			  <div class="accordion-item">
+			    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+					<h2 class="display-5 text-center">My Project</h2>
+					<div class="slider">
+					  <div class="slides my-project">
+					  	<div class="card mt-1 mb-3" style="width: 16rem;">
+						  <img src="img/banner.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h5 class="card-title">FEC Faaris Education Center</h5>
+						    <p class="card-text">Web App E-Learning Berbasis GUI dengan tampilan User Interface modern ala Glassmorphism 2021</p>
+						    <a href="https://risproject.github.io/fec/" class="btn btn-primary tombol">Kunjungi</a>
+						  </div>
+						</div>
+					  	<div class="card mt-1 mb-3" style="width: 16rem;">
+						  <img src="https://risproject.github.io/ruangbk/img/gambar.jpg" class="card-img-top" alt="yahaha gak keluar gambar">
+						  <div class="card-body">
+						    <h5 class="card-title">RuangBK Care</h5>
+						    <p class="card-text">Web App untuk mencukupi kebutuhan <strong>Rohani dan Psikologi</strong> anda</p>
+						    <a href="https://risproject.github.io/ruangbk/" class="btn btn-primary tombol">Kunjungi</a>
+						  </div>
+						</div>
+					  	<div class="card mt-1 mb-3" style="width: 16rem;">
+						  <img src="img/banner.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h5 class="card-title">Game Si Botack</h5>
+						    <p class="card-text">Game Berbasis WEB yang dapat memancing emosi. Berani coba?</p>
+						    <a href="https://risproject.github.io/game/" class="btn btn-primary tombol">Kunjungi</a>
+						  </div>
+						</div>
+						<div class="card mt-1 mb-3" style="width: 16rem;">
+						  <img src="img/banner.jpg" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h5 class="card-title">ForOS Project</h5>
+						    <p class="card-text">Operating System Berbasis Android Open Source dengan tampilan User Interface modern ala Glassmorphism 2021 dan optimalisasi hardware tinggi</p>
+						    <a href="404" class="btn btn-primary tombol">Kunjungi</a>
+						  </div>
+						</div>
+					  </div>
+					</div>
+			    </div>
+			  </div>
 			</div>
 		</div>
 	</section>
@@ -228,7 +277,7 @@
 			<div class="line mb-5"></div>
 			<div class="row justify-content-center">
 				<div class="col-md-3 col-6 mb-3">
-					<div class="card">
+					<div class="card catalog-card">
 					  <img src="img/produk1.jpg" class="card-img-top" alt="Catalog 1">
 					  <div class="card-body">
 					    <p class="card-text text-center">Lukisan Tampan dan Berani</p>
@@ -244,7 +293,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 col-6 mb-3">
-					<div class="card">
+					<div class="card catalog-card">
 					  <img src="img/produk2.jpg" class="card-img-top" alt="Catalog 2">
 					  <div class="card-body">
 					    <p class="card-text text-center">Poster Mas-mas snek vidiotod</p>
@@ -260,7 +309,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 col-6 mb-3">
-					<div class="card">
+					<div class="card catalog-card">
 					  <img src="img/produk3.jpg" class="card-img-top" alt="Catalog 3">
 					  <div class="card-body">
 					    <p class="card-text text-center">Ceret Aladin bisa keluar air kalau diisi air</p>
@@ -276,7 +325,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 col-6 mb-3">
-					<div class="card">
+					<div class="card catalog-card">
 					  <img src="img/produk4.jpg" class="card-img-top" alt="Catalog 4">
 					  <div class="card-body">
 					    <p class="card-text text-center">Pelengkap Makanan Bergizi</p>
@@ -304,25 +353,30 @@
 				<div class="line mb-5"></div>
 				<div class="slider">
 				  <div class="slides">
-				  	<div class="staff">
+				  	<div class="profile">
 				  		<img src="img/presiden1.jpg" class="rounded-circle mb-3">
 						<h4>Prof. Dr. Faaris Muwaffaq</h4>
-						<p>CEO Faaris Group</p>
+						<p>CEO Faaris Catalog</p>
 				  	</div>
-				  	<div class="staff">
+				  	<div class="profile">
 				  		<img src="img/profile.jpeg" class="rounded-circle mb-3">
 						<h4>Prof. Faaris Muwaffaq</h4>
 						<p>CEO Faaris Education Center</p>
 				  	</div>
-				  	<div class="staff">
+				  	<div class="profile">
 				  		<img src="img/profile1.jpg" class="rounded-circle mb-3">
 						<h4>Syech Faaris Muwaffaq</h4>
 						<p>CEO RuangBK Care</p>
 				  	</div>
-				  	<div class="staff">
+				  	<div class="profile">
 				  		<img src="img/profile2.jpg" class="rounded-circle mb-3">
 						<h4>Dr. Faaris Muwaffaq</h4>
 						<p>Staff Khusus IT</p>
+				  	</div>
+				  	<div class="profile">
+				  		<img src="img/profile3.jpg" class="rounded-circle mb-3">
+						<h4>Faaris Muwaffaq, S.Mb.</h4>
+						<p>Staff Khusus Biznis</p>
 				  	</div>
 				  </div>
 				</div>
