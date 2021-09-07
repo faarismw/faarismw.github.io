@@ -200,6 +200,26 @@ body {
 		z-index: 6;
 	}
 
+/*project*/
+	.my-profile {
+		background: rgba(255, 255, 255, 0.7);
+		backdrop-filter: blur(20px);
+		margin: 20px;
+		border-radius: 20px;
+	}
+	.card-project {
+		background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255,222, 255, 0.3));
+		backdrop-filter: blur(20px);
+	}
+	.progress{
+		border-radius: 20px;
+		background: rgba(255, 255, 255, 0.3);
+	}
+	.progress-bar {
+		border-radius: 20px;
+		background-color: rgba(72, 30, 175, 1);
+	}
+
 /*footer*/
 footer {
 	background-color: #3f3f3f;
