@@ -201,15 +201,23 @@ body {
 	}
 
 /*project*/
-	.my-profile {
-		background: rgba(255, 255, 255, 0.7);
+	.my-profiles {
+		background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.75), rgba(255,222, 255, 0.5));
 		backdrop-filter: blur(20px);
-		margin: 20px;
-		border-radius: 20px;
+		margin: 25px;
+		border-radius: 25px;
+	}
+	.my-project {
+		backdrop-filter: blur(20px);
+		border-top-left-radius: 25px;
+		border-top-right-radius: 25px;
+	}
+	.personal-info p {
+		padding: 0;
+		margin: 0;
 	}
 	.card-project {
-		background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255,222, 255, 0.3));
-		backdrop-filter: blur(20px);
+		background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.75), rgba(255,222, 255, 0.5));
 	}
 	.progress{
 		border-radius: 20px;
@@ -219,7 +227,14 @@ body {
 		border-radius: 20px;
 		background-color: rgba(72, 30, 175, 1);
 	}
-
+	.navigasi {
+		background-color: rgba(72, 30, 175, 1);
+		position: fixed;
+		bottom: 20px;
+		border-top-right-radius: 25px;
+		border-bottom-right-radius: 25px;
+		color: white;
+	}
 /*footer*/
 footer {
 	background-color: #3f3f3f;
