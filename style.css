@@ -202,13 +202,13 @@ body {
 
 /*project*/
 	.my-profiles {
-		background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255,255, 255, 0.4));
+		background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
 		backdrop-filter: blur(20px);
 		margin: 25px;
 		border-radius: 25px;
 	}
 	.my-project {
-		backdrop-filter: blur(20px);
+		backdrop-filter: blur(10px);
 		border-top-left-radius: 25px;
 		border-top-right-radius: 25px;
 	}
@@ -217,7 +217,8 @@ body {
 		margin: 0;
 	}
 	.card-project {
-		background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255,255, 255, 0.4));
+		backdrop-filter: blur(10px);
+		background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
 	}
 	.progress{
 		border-radius: 20px;
