@@ -8,13 +8,22 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
+
+	<!-- loader -->
+	<div class="bg-loader">
+		<div class="kotak">
+			<div class="loader"></div>
+			<p>sabar..</p>
+		</div>
+	</div>
 
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top content">
 		<div class="container">
-		    <a class="navbar-brand" href="#"><img src="img/profile2.jpg" class="rounded-circle" alt="" width="24" height="24"> Faaris Catalog</a>
+		    <a class="navbar-brand" href="#"><i class="fab fa-instalod"></i> Faaris Mobile</a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 		      <span><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
 		    </button>
@@ -25,7 +34,7 @@
 		          <a class="nav-link" href="index.htm#">Home</a>
 		        </li>
 		        <li class="nav-item">
-		          <a class="nav-link" href="#info">Info</a>
+		          <a class="nav-link" href="#main">Main</a>
 		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" href="#catalog">Catalog</a>
@@ -41,9 +50,11 @@
 
 	<!-- jumbotron -->
 	<div class="jumbotron jumbotron-fluid">
-	  	<div class="container">
-		  	<h1 class="display-6">Selamat Datang di <span>Faaris Official Website</span> </h1> 
-			<a href="#catalog" class="btn btn-primary tombol">Explore Now!</a>
+	  	<div class="container text-white">
+		  	<h1 class="display-6">Hi <span>Hallo,</span> </h1> 
+		  	<p>Selamat datang di Faaris Official Website</p>
+			<a href="#catalog" class="btn tombol-kaca">Get Tour</a>
+			<a href="#catalog" class="btn tombol-kaca exp">Explore Now!</a>
 		</div>
 		</div>
 	</div>
@@ -51,27 +62,44 @@
 	
 	<!-- info panel -->
 	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-lg-10 info-panel">
-				<div class="row">
-					<div class="col-lg kotak yt" href="yt">
-						<a href="https://www.youtube.com/channel/UClfJUrLWJ5vd7pmALNVUtbg" style="text-decoration: none; color: inherit;">
-							<img src="img/yt.png" class="float-left iconlink">
-							<h4>Faaris Muwaffaq</h4>
-						</a>
-						<p>Official youtube Chanel</p>
+		<div class="row justify-content-center" id="main">
+			<div class="panel">
+				<div class="row menubar pb-2">
+					<div class="col-md col-4">
+						<div class="icon mt-2">
+							<a href="profiles.html"><button class="btn tmenu" style="background-color: #3382E2;"><i class="far fa-user text-white"></i></button></a>
+							<p>Profiles</p>
+						</div>
 					</div>
-					<div class=" col-lg kotak">
-						<a href="https://www.instagram.com/faaris_mwf/" style="text-decoration: none; color: inherit;">
-							<img src="img/ig.png" class="float-left iconlink">
-							<h4>faaris_mwf</h4>
-						</a>
-						<p>My Personal Instagram</p>	
+					<div class="col-md col-4">
+						<div class="icon mt-2">
+							<button class="btn tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #28B463;"><i class="fas fa-chalkboard text-white"></i></button>
+							<p>Info</p>
+						</div>
 					</div>
-					<div class="col-lg kotak">
-						<a href=""><img src="img/wa.png" class="float-left iconlink"></a>
-						<h4>083*9*257*59</h4>
-						<p>Hanya Untuk Bisnis</p>
+					<div class="col-md col-4">
+						<div class="icon mt-2">
+							<button class="btn tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: #229954;"><i class="far fa-newspaper text-white"></i></button>
+							<p>Article</p>
+						</div>
+					</div>
+					<div class="col-md col-4">
+						<div class="icon mt-2">
+							<button class="btn tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: #16A085;"><i class="far fa-paper-plane text-white"></i></button>
+							<p>ContactMe</p>
+						</div>
+					</div>
+					<div class="col-md col-4">
+						<div class="icon mt-2">
+							<button class="btn tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="background-color: #2980B9;"><i class="fab fa-instagram text-white"></i></button>
+							<p>SocialMed</p>
+						</div>
+					</div>
+					<div class="col-md col-4">
+						<div class="icon mt-2">
+							<a href="#catalog"><button class="btn tmenu" style="background-color: #7736C6;"><i class="fas fa-arrow-down text-white"></i></button></a>
+							<p>Catalog</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -79,40 +107,15 @@
 	</div>
 	<!-- akhir info panel -->
 
-	<!-- Info -->
-	<section id="info" class="content">
+	<!-- main -->
+	<section class="content">
 		<div class="container">
-			<div class="row menubar">
-				<div class="col-3">
-					<div class="icon mb-2 mt-2">
-						<a href="profiles.html"><button class="btn tmenu"><i class="fa fa-user" aria-hidden="true"></i></button></a>
-						<p>Profiles</p>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="icon mb-2 mt-2">
-						<button class="btn tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><i class="fas fa-pager"></i></button>
-						<p>Info</p>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="icon mb-2 mt-2">
-						<button class="btn tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><i class="fas fa-newspaper"></i></button>
-						<p>Article</p>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="icon mb-2 mt-2">
-						<button class="btn tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><i class="fas fa-comments"></i></button>
-						<p>Comment</p>
-					</div>
-				</div>
-			</div>
 			<div class="accordion" id="accordionExample">
 			  <div class="accordion-item">
 			    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 			    	<div class="row justify-content-center fs-6 mb-3">
-						<div class="col-md-6 news">
+						<div class="col-md-6">
+							<h2 class="display-5 pb-2 text-center">Info</h2>
 							<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 								<div class="carousel-indicators">
 								  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -154,9 +157,9 @@
 						</div>
 						<div class="col-md-6 informasi">
 							<h2 class="pt-2 display-5">Terimakasih telah mengunjungi <span>Faaris Catalog</span></h2>
-							<p class="pt-2">Untuk paid promote di Instagram / Youtube langsung DM.  Yang ingin buat web seperti ini silahkan hubungi staff saya kita bincangkan soal harga. <strong>klik "My Project" untuk melihat project saya</strong></p>
+							<p class="pt-2">Untuk paid promote di Instagram / Youtube langsung DM.  Yang ingin buat web seperti ini silahkan hubungi staff saya kita bincangkan soal harga. <strong>klik "My Profiles" untuk melihat Profile & project saya</strong></p>
 							<div class="btn-group">
-							  <a class="btn btn-primary tombol text-white" href="profiles.html">My Project</a>
+							  <a class="btn btn-primary tombol text-white" href="profiles.html">My Profiles</a>
 							  <button type="button" id="dropdownMenuButton2" class="btn btn-secondary dropdown-toggle dropdown-toggle-split tombol" data-bs-toggle="dropdown" aria-expanded="false">
 							    <span class="visually-hidden">Toggle Dropdown</span>
 							  </button>
@@ -217,6 +220,32 @@
 									Loading...
 								</button>
 							</form>
+						</div>
+					</div>
+			    </div>
+			  </div>
+			  <div class="accordion-item">
+			    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+					<div class="row justify-content-center sosmed">
+						<h2 class="display-5 pb-2 text-center">Social Media</h2>
+						<div class="col-lg kotak yt" href="yt">
+							<a href="https://www.youtube.com/channel/UClfJUrLWJ5vd7pmALNVUtbg" style="text-decoration: none; color: inherit;">
+								<img src="img/yt.png" class="iconlink">
+								<h4>Faaris Muwaffaq</h4>
+							</a>
+							<p>Official youtube Chanel</p>
+						</div>
+						<div class=" col-lg kotak">
+							<a href="https://www.instagram.com/faaris_mwf/" style="text-decoration: none; color: inherit;">
+								<img src="img/ig.png" class="iconlink">
+								<h4>faaris_mwf</h4>
+							</a>
+							<p>My Personal Instagram</p>	
+						</div>
+						<div class="col-lg kotak">
+							<a href=""><img src="img/wa.png" class="iconlink"></a>
+							<h4>083*9*257*59</h4>
+							<p>Hanya Untuk Bisnis</p>
 						</div>
 					</div>
 			    </div>
@@ -346,6 +375,12 @@
 			<small>Created With Ngoding Dewe by:<a href="https://www.instagram.com/faaris_mwf/" class="text-white fw-bold"> Faaris Muwaffaq</a> </small>
 		</footer>
 	<!-- akhir footer -->
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".bg-loader").hide();
+		})
+	</script>
 	
 	<script>
 	  const scriptURL = 'https://script.google.com/macros/s/AKfycbzgcU0PswNZrdFdZS080Mf5iC1JnvN6-hvKKlFVs19x1eYQdOdFUJ5uv7_W98Vpi53d/exec'
