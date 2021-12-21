@@ -11,7 +11,6 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-
 	<!-- loader -->
 	<div class="bg-loader">
 		<div class="kotak">
@@ -60,7 +59,7 @@
 	</div>
 	<!-- jumbotron -->
 	
-	<!-- info panel -->
+	<!-- menu panel -->
 	<div class="container">
 		<div class="row justify-content-center" id="main">
 			<div class="panel">
@@ -105,12 +104,14 @@
 			</div>
 		</div>
 	</div>
-	<!-- akhir info panel -->
+	<!-- akhir menu panel -->
 
 	<!-- main -->
 	<section class="content">
 		<div class="container">
 			<div class="accordion" id="accordionExample">
+
+				<!-- info -->
 			  <div class="accordion-item">
 			    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 			    	<div class="row justify-content-center fs-6 mb-3">
@@ -177,6 +178,8 @@
 					</div>
 			    </div>
 			  </div>
+
+			  <!-- article -->
 			  <div class="accordion-item">
 			    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
 			    	<div class="row">
@@ -193,6 +196,8 @@
 			    	</div>
 			    </div>
 			  </div>
+
+			  <!-- contact me -->
 			  <div class="accordion-item">
 			    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
 					<div class="row justify-content-center">
@@ -224,6 +229,8 @@
 					</div>
 			    </div>
 			  </div>
+
+			  <!-- social media -->
 			  <div class="accordion-item">
 			    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
 					<div class="row justify-content-center sosmed">
@@ -250,6 +257,7 @@
 					</div>
 			    </div>
 			  </div>
+
 			</div>
 		</div>
 	</section>
@@ -261,70 +269,147 @@
 			<p class="text-center">Koleksi Produk Faaris Catalog</p>
 			<div class="line mb-5"></div>
 			<div class="row justify-content-center">
+
+				<!-- display&triger -->
 				<div class="col-md-3 col-6 mb-3">
-					<div class="card catalog-card">
+					<div class="catalog-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
 					  <img src="img/produk1.jpg" class="card-img-top" alt="Catalog 1">
-					  <div class="card-body">
-					    <p class="card-text text-center">Lukisan Tampan dan Berani</p>
-					    <div class="row text-center">
-							<div class="col">
-								<a href="#catalog" style="color:orange; text-decoration: none;"><i class="fas fa-shopping-bag"></i> Shopee </a>
-							</div>
-							<div class="col">
-								<a href="#catalog" style="color:green; text-decoration: none;"><i class="fas fa-shopping-bag"></i>Tokped</a>
-							</div>
-						</div>
-					  </div>
 					</div>
 				</div>
+				<!-- popup -->
+				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered">
+				    <div class="modal-content catalog-card">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Produk 1</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				      </div>
+				      <div class="row modal-body">
+				        <div class="col-md text-center">
+				       		<img src="img/produk1.jpg" class=" pb-3" alt="Catalog 1" style="width:285px;">
+				        </div>
+				        <div class="col-md">
+				        	<h5>Lukisan Tampan dan Berani</h5>
+				        	<p style="text-align: justify;">Lukisan handmade dengan cat air, bonus Frame + Box Rp65000 nego belum termasuk ongkir garansi 3 hari S&K berlaku</p>
+				        </div>
+				      </div>
+				      <div class="row modal-footer text-center">
+				        <div class="col">
+									<a href="#catalog" style="color:orange; text-decoration: none;"><i class="fas fa-shopping-bag"></i> Shopee </a>
+								</div>
+								<div class="col">
+									<a href="#catalog" style="color:green; text-decoration: none;"><i class="fas fa-shopping-bag"></i>Tokped</a>
+								</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<!-- display&triger -->
 				<div class="col-md-3 col-6 mb-3">
-					<div class="card catalog-card">
-					  <img src="img/produk2.jpg" class="card-img-top" alt="Catalog 2">
-					  <div class="card-body">
-					    <p class="card-text text-center">Poster Mas-mas snek vidiotod</p>
-					    <div class="row text-center">
-							<div class="col">
-								<a href="#catalog" style="color:orange; text-decoration: none;"><i class="fas fa-shopping-bag"></i> Shopee </a>
-							</div>
-							<div class="col">
-								<a href="#catalog" style="color:green; text-decoration: none;"><i class="fas fa-shopping-bag"></i>Tokped</a>
-							</div>
-						</div>
-					  </div>
+					<div class="catalog-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+					  <img src="img/produk2.jpg" class="card-img-top" alt="Catalog 1">
 					</div>
 				</div>
+				<!-- popup -->
+				<div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered">
+				    <div class="modal-content catalog-card">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Produk 2</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				      </div>
+				      <div class="row modal-body">
+				        <div class="col-md text-center catalog-card">
+				       		<img src="img/produk2.jpg" class=" pb-3" alt="Catalog 2" style="width:285px;">
+				        </div>
+				        <div class="col-md">
+				        	<h5>Lampu Meja - Desk Lamp </h5>
+				        	<p style="text-align: justify;">Model-K01, lampu meja LED hemat daya input 5v 1-2.1A terbuat dari kayu</p>
+				        </div>
+				      </div>
+				      <div class="row modal-footer text-center">
+				        <div class="col">
+									<a href="#catalog" style="color:orange; text-decoration: none;"><i class="fas fa-shopping-bag"></i> Shopee </a>
+								</div>
+								<div class="col">
+									<a href="#catalog" style="color:green; text-decoration: none;"><i class="fas fa-shopping-bag"></i>Tokped</a>
+								</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<!-- display&triger -->
 				<div class="col-md-3 col-6 mb-3">
-					<div class="card catalog-card">
+					<div class="catalog-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModa3">
 					  <img src="img/produk3.jpg" class="card-img-top" alt="Catalog 3">
-					  <div class="card-body">
-					    <p class="card-text text-center">Ceret Aladin bisa keluar air kalau diisi air</p>
-					    <div class="row text-center">
-							<div class="col">
-								<a href="#catalog" style="color:orange; text-decoration: none;"><i class="fas fa-shopping-bag"></i> Shopee </a>
-							</div>
-							<div class="col">
-								<a href="#catalog" style="color:green; text-decoration: none;"><i class="fas fa-shopping-bag"></i>Tokped</a>
-							</div>
-						</div>
-					  </div>
 					</div>
 				</div>
+				<!-- popup -->
+				<div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered">
+				    <div class="modal-content catalog-card">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Produk 3</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				      </div>
+				      <div class="row modal-body">
+				        <div class="col-md text-center catalog-card">
+				       		<img src="img/produk3.jpg" class=" pb-3" alt="Catalog 3" style="width:285px;">
+				        </div>
+				        <div class="col-md">
+				        	<h5>Ceret Aladin tidak ajaib</h5>
+				        	<p style="text-align: justify;">Ceret ini bisa keluar air jika diisi air. (TIDAK DIJUAL)</p>
+				        </div>
+				      </div>
+				      <div class="row modal-footer text-center">
+				        <div class="col">
+									<a href="#catalog" style="color:orange; text-decoration: none;"><i class="fas fa-shopping-bag"></i> Shopee </a>
+								</div>
+								<div class="col">
+									<a href="#catalog" style="color:green; text-decoration: none;"><i class="fas fa-shopping-bag"></i>Tokped</a>
+								</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+				<!-- display&triger -->
 				<div class="col-md-3 col-6 mb-3">
-					<div class="card catalog-card">
+					<div class="catalog-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModa4">
 					  <img src="img/produk4.jpg" class="card-img-top" alt="Catalog 4">
-					  <div class="card-body">
-					    <p class="card-text text-center">Pelengkap Makanan Bergizi</p>
-					    <div class="row text-center">
-							<div class="col">
-								<a href="#catalog" style="color:orange; text-decoration: none;"><i class="fas fa-shopping-bag"></i> Shopee </a>
-							</div>
-							<div class="col">
-								<a href="#catalog" style="color:green; text-decoration: none;"><i class="fas fa-shopping-bag"></i>Tokped</a>
-							</div>
-						</div>
-					  </div>
 					</div>
 				</div>
+				<!-- popup -->
+				<div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-dialog-centered">
+				    <div class="modal-content catalog-card">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Produk 4</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				      </div>
+				      <div class="row modal-body">
+				        <div class="col-md text-center catalog-card">
+				       		<img src="img/produk4.jpg" class=" pb-3" alt="Catalog 2" style="width:285px;">
+				        </div>
+				        <div class="col-md">
+				        	<h5>Pelet Takari</h5>
+				        	<p style="text-align: justify;">Pelengkap makanan/minuman bergizi, konsumsi berlebihan/tidak wajar dan dicampur dengan bahan tertentu dapat menyebabkan epilepsi</p>
+				        </div>
+				      </div>
+				      <div class="row modal-footer text-center">
+				        <div class="col">
+									<a href="#catalog" style="color:orange; text-decoration: none;"><i class="fas fa-shopping-bag"></i> Shopee </a>
+								</div>
+								<div class="col">
+									<a href="#catalog" style="color:green; text-decoration: none;"><i class="fas fa-shopping-bag"></i>Tokped</a>
+								</div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				
 			</div>
 		</div>
 	</section>
