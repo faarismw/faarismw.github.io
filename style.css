@@ -23,6 +23,9 @@
 		.menubar {
 			margin-top: 20px;
 		}
+		.informasi {
+			padding-top: 50px;
+		}
 	}
 
 
@@ -30,16 +33,42 @@
 body {
 	margin: auto;
 }
-
+body.darkmode {
+    background: rgb(57, 57, 57);
+    color: rgb(227, 227, 227);
+}
+body.darkmode .panel{
+	background-color: rgba(0, 0, 0, 0.75);
+}
+body.darkmode .navbar{
+	background-color: rgba(0, 0, 0, 0.75);
+}
+body.darkmode .navbar-brand{
+	color: white !important;
+}
+body.darkmode .nav-link{
+	color: white !important;
+}
+body.darkmode .fa-chevron-down{
+	color: white !important;
+}
+body.darkmode .modal-content{
+	background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.5));
+}
+body.darkmode .lightbtn{
+	visibility: visible;
+}
+.lightbtn{
+	visibility: hidden;
+}
 
 /*Navbar*/
 	.navbar {
-		background-color: rgba(0, 0, 0, 0.75);
-		backdrop-filter: blur(25px);
+		background-color: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px);
 	}
 	.navbar-brand, .nav-link {
-		color: white !important;
-		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+		color: black !important;
 		margin-top: -5px;
 	}
 /*jumbotron*/
@@ -157,7 +186,7 @@ body {
 	}
 
 /*Catalog*/
-	.catalog-card, .card img {
+	.card img, .card {
 		border-radius: 12px;
 	}
 	.card {
@@ -168,6 +197,15 @@ body {
 		transform: scale(1.08);
 		transition: 0.25s;
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	}
+	.modal{
+		backdrop-filter: blur(10px);
+		background: rgba(0, 0, 0, 0.1);
+	}
+	.modal-content{
+		background-color: rgba(255, 255, 255, 0.75);
+		backdrop-filter: blur(20px);
+		border-radius: 12px;
 	}
 
 /*staff*/
@@ -223,13 +261,13 @@ footer {
 
 /*Utility*/
 	.tombol {
-		border-radius: 25px;
+		border-radius: 15px;
 		border: none;
 	}
 	.tombol-kaca {
 		background-color: rgba(255, 255, 255, 0.25);
 		backdrop-filter: blur(20px);
-		border-radius: 25px;
+		border-radius: 15px;
 		border: none;
 		color: white;
 		border: 2px solid;
