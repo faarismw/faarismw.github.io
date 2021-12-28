@@ -58,6 +58,9 @@ body.darkmode .modal-content{
 body.darkmode .lightbtn{
 	visibility: visible;
 }
+body.darkmode .icon p{
+	color: white !important;
+}
 .lightbtn{
 	visibility: hidden;
 }
@@ -199,7 +202,7 @@ body.darkmode .lightbtn{
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	}
 	.modal{
-		backdrop-filter: blur(5px);
+		backdrop-filter: blur(10px);
 		background: rgba(0, 0, 0, 0.1);
 	}
 	.modal-content{
