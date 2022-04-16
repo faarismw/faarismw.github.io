@@ -197,6 +197,7 @@ body.darkmode .icon p{
 		transition: 0.25s;
 		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 		margin-bottom: 10px;
+		border: 2px solid #cccccc;
 	}
 	.card:hover{
 		transition: 0.25s;
@@ -224,7 +225,7 @@ body.darkmode .icon p{
 	}
 	.profile-c img{
 		width: 75px;
-		border: 5px solid #cccccc;
+		border: 4px solid #cccccc;
 		text-align: center;
 		z-index: 6;
 		margin-top: 15px;
