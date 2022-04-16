@@ -35,7 +35,7 @@
 body {
 	margin: auto;
 }
-body.darkmode {
+body.darkmode, .darkmode .card-body{
     background: rgb(57, 57, 57);
     color: rgb(227, 227, 227);
 }
@@ -386,7 +386,6 @@ footer {
 	}
 /*akhir utility*/
 
-
 /*Mobile*/
 	@media screen and (max-width: 768px) {
 		.container {
@@ -394,14 +393,15 @@ footer {
 		}
 		.content .container{
 			width: 92%;
+			overflow: hidden;
 		}
 		.navbar{
 			margin: 0 10px 0 10px;
 			top: 10px;
 			border-radius: 12px;
 		}
-		form .searchbar{
-			max-width: 180px;
+		.searchbar{
+			max-width: 250px;
 		}
 		.jumbotron {
 			margin-top: 0px;
@@ -418,6 +418,8 @@ footer {
 		.panel {
 			margin-top: -130px;
 			padding-top: 20px;
+			overflow: visible;
+
 		}
 		.icon p {
 			font-size: 15px;
