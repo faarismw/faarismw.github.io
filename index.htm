@@ -4,12 +4,13 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width-device-width, initial-scale=1.0">
-	<title>Faaris Eferes | Faaris Official Website</title>
+	<title>Eferes Enviro | Faaris Official Website</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 	<!-- loader -->
@@ -23,13 +24,9 @@
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-lg navbar-dark shadow-lg fixed-top content">
 		<div class="container">
-		    <a class="navbar-brand" href="#"><i class="fab fa-instalod"></i> Faaris Eferes</a>
-		    <div id="theme">
-			    <span onclick="setDarkMode(true)" id="darkBtn" class="">  <i class="far fa-moon"></i> </span>
-			    <span onclick="setDarkMode(false)" id="lightBtn" class="lightbtn"> <i class="far fa-lightbulb"></i> </span>
-			</div>
+		    <a class="navbar-brand" href="#"><i class="fab fa-instalod"></i> EFERES</a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-		      <span><i class="fa fa-chevron-down" style="color:black;" aria-hidden="true"></i></span>
+		      <span><i class="fa fa-bars" style="color:black;" aria-hidden="true"></i></span>
 		    </button>
 		    <div class="collapse navbar-collapse text-right" id="navbarText">
 		      <ul class="navbar-nav ms-auto ">
@@ -41,7 +38,7 @@
 		          <a class="nav-link" href="#main">Main</a>
 		        </li>
 		        <li class="nav-item">
-		          <a class="nav-link" href="#catalog">Catalog</a>
+		          <a class="nav-link" href="#gallery">Gallery</a>
 		        </li>
 		        <li class="nav-item">
 		          <a class="nav-link" href="#about">About</a>
@@ -55,43 +52,17 @@
 	<!-- jumbotron -->
 	<div class="jumbotron jumbotron-fluid">
 	  	<div class="container text-white">
-		  	<h1 class="display-6">Hi <span>Hallo,</span> </h1> 
-		  	<p>Selamat datang di Eferes Store</p>
-		  	<button type="button" class="btn tombol-kaca" data-bs-toggle="modal" data-bs-target="#exampleModalTour">Get Tour</button>
-			<a href="#catalog" class="btn tombol-kaca exp">Explore Now!</a>
+		  	<h1 class="display-6" style=" transform: translateY(15px);">Hi <span>Hallo,</span> </h1> 
+		  	<p>Selamat datang di Eferes Enviro</p>
+			<a href="#gallery" class="btn tombol-kaca ">Explore Now!</a>
+			<button class="btn text-white" id="theme">
+			    <span onclick="setDarkMode(true)" id="darkBtn" class="">  <i class="far fa-moon"></i> </span>
+			    <span onclick="setDarkMode(false)" id="lightBtn" class="lightbtn"> <i class="far fa-lightbulb"></i> </span>
+			</button class="btn tombol-kaca">
 		</div>
 		</div>
 	</div>
 	<!-- jumbotron -->
-
-	<!-- popup tour -->
-	<div class="modal fade" id="exampleModalTour" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-dialog-scrollable">
-	    <div class="modal-content">
-	      <div class="modal-header justify-content-center">
-	        <div class="row text-center">
-	        	<div class="col-lg">
-	        		<i class="fab fa-instalod tilt-effect" style="font-size:150px;"></i>
-	        		<h4 class="display-6">Faaris Eferes</h4>
-	        	</div>
-	        </div>
-	      </div>
-	      <div class="modal-body">
-	      	<p>Ikon <i class="far fa-moon"></i> atau <i class="far fa-lightbulb"></i> untuk mengubah tema gelap / terang</p>
-	      	<p>Ikon <i class="fa fa-chevron-down" style="color:black;" aria-hidden="true"></i> untuk membuka navbar</p>
-	      	<p>"Explore Now" shortcut menuju catalog</p>
-	      	<p>"Menubar" berisi menu layanan Faaris Eferes</p>
-	      	<p>"My Profiles" untuk mengunjungi profile & project saya</p>
-	      	<p>"Catalog" berisi produk Eferes Merchandise</p>
-	      	<p>anda bisa klik pada "Product Card" untuk melihat detail & membeli produk tersebut</p>
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-primary tombol" data-bs-dismiss="modal">Paham</button>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<!-- akhir popup tour -->
 	
 	<!-- menu panel -->
 	<div class="container">
@@ -100,38 +71,38 @@
 				<div class="row menubar pb-2">
 					<div class="col-md col-4">
 						<div class="icon mt-2">
-							<a href="profiles.html"><button class="btn tmenu" style="background-color: #3382E2;"><i class="far fa-user text-white"></i></button></a>
+							<a href="help.html"><img class="tmenu" src="icon/tour.png" alt=""></a>
+							<p>Get Tour</p>
+						</div>
+					</div>
+					<div class="col-md col-4">
+						<div class="icon mt-2">
+							<a href="profiles.html"><img class="tmenu" src="icon/profile.png" alt=""></a>
 							<p>Profiles</p>
 						</div>
 					</div>
 					<div class="col-md col-4">
 						<div class="icon mt-2">
-							<button class="btn tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #28B463;"><i class="fas fa-chalkboard text-white"></i></button>
+							<img class="tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" src="icon/info.png" alt="">
 							<p>Info</p>
 						</div>
 					</div>
 					<div class="col-md col-4">
 						<div class="icon mt-2">
-							<button class="btn tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color: #229954;"><i class="far fa-newspaper text-white"></i></button>
-							<p>Article</p>
-						</div>
-					</div>
-					<div class="col-md col-4">
-						<div class="icon mt-2">
-							<button class="btn tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color: #16A085;"><i class="far fa-paper-plane text-white"></i></button>
+							<img class="tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" src="icon/contact.png" alt="">
 							<p>ContactMe</p>
 						</div>
 					</div>
 					<div class="col-md col-4">
 						<div class="icon mt-2">
-							<button class="btn tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="background-color: #2980B9;"><i class="fab fa-instagram text-white"></i></button>
+							<img class="tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree" src="icon/socialmedia.png" alt="">
 							<p>SocialMed</p>
 						</div>
 					</div>
 					<div class="col-md col-4">
 						<div class="icon mt-2">
-							<a href="#catalog"><button class="btn tmenu" style="background-color: #7736C6;"><i class="fas fa-arrow-down text-white"></i></button></a>
-							<p>Catalog</p>
+							<a href="#gallery"><img class="tmenu" src="icon/gallery.png" alt=""></a>
+							<p>Gallery</p>
 						</div>
 					</div>
 				</div>
@@ -162,7 +133,7 @@
 									<img src="img/s1.jpg" class="d-block w-100" alt="...">
 									<div class="carousel-caption d-md-block">
 									  <h5>Merchandise</h5>
-									  <p>Tersedia di Catalog</p>
+									  <p>Tersedia di gallery</p>
 									</div>
 								  </div>
 								  <div class="carousel-item">
@@ -191,43 +162,12 @@
 							</div>
 						</div>
 						<div class="col-md-6 informasi">
-							<h2 class="pt-3 display-5">Terimakasih telah mengunjungi <span>Eferes Merchandise</span></h2>
-							<p class="pt-2">Untuk paid promote di Instagram / Youtube langsung DM.  Anda berminat untuk mempunyai website seperti ini? Langsung hubungi staff saya <strong>klik "My Profiles" untuk melihat Profile & project saya</strong></p>
-							<div class="btn-group">
-							  <a class="btn btn-primary tombol text-white" href="profiles.html">My Profiles</a>
-							  <button type="button" id="dropdownMenuButton2" class="btn btn-secondary dropdown-toggle dropdown-toggle-split tombol" data-bs-toggle="dropdown" aria-expanded="false">
-							    <span class="visually-hidden">Toggle Dropdown</span>
-							  </button>
-							  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-							  	<li><a class="dropdown-item" href="https://risproject.github.io/fec/">Faaris Education Center</a></li>
-							    <li><hr class="dropdown-divider"></li>
-							    <li><a class="dropdown-item" href="https://risproject.github.io/ruangbk/">RuangBK Care</a></li>
-							    <li><hr class="dropdown-divider"></li>
-							    <li><a class="dropdown-item" href="https://risprojrct.github.io/game/">Game Si Botack</a></li>
-							    <li><hr class="dropdown-divider"></li>
-							    <li><a class="dropdown-item" href="404">ForOS Project</a></li>
-							  </ul>
-							</div>
+							<h2 class="pt-3 display-5">Terimakasih telah mengunjungi <span>Eferes Enviro</span></h2>
+							<p class="pt-2">Untuk paid promote di Instagram / Youtube hubungi melalui DM atau melalui Email: faaris.muwaffaq@gmail.com <strong>klik "My Profiles" untuk melihat Profile & "Portofolio" untuk melihat project saya</strong></p>
+							<a class="btn btn-primary tombol text-white" href="profiles.html">My Profiles</a>
+							<button class="btn tombol btn-primary"><i class="fa fa-download" aria-hidden="true"></i> Faaris's CV</button>
 						</div>
 					</div>
-			    </div>
-			  </div>
-
-			  <!-- article -->
-			  <div class="accordion-item">
-			    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-			    	<div class="row">
-			    		<h2 class="display-5 pb-2 text-center">Article</h2>
-			    		<div class="col-md-4">
-			    			<iframe class="darigoogle" src="https://docs.google.com/document/d/e/2PACX-1vQXKccw0rcAmoGydfF-oM8j2xXj2OHwqeblfkfSCSeyw3uh4i-WWU53roq241n3Gvt-AXCQmE0DB4Yo/pub?embedded=true"></iframe>
-			    		</div>
-			    		<div class="col-md-4">
-			    			<iframe class="darigoogle" src="https://docs.google.com/document/d/e/2PACX-1vRz_Y-OjmgUqpnmhmvU3KUtUJle-GDCQfjt7fp3FWGkUigxKSOp3hYyiMg6-XxXhsai7TZA71aKTm9I/pub?embedded=true"></iframe>
-			    		</div>
-			    		<div class="col-md-4">
-			    			<iframe class="darigoogle" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTCrpvRIcO0d_N7813s04JDfGAcS3r-M1_s8cmCuKpc2Nv_EqgIcYWyzNaNaZoq6ci0f6dXZK5OkPZ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
-			    		</div>
-			    	</div>
 			    </div>
 			  </div>
 
@@ -236,7 +176,7 @@
 			    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
 					<div class="row justify-content-center">
 						<h2 class="display-5 pb-2 text-center">Contact Me</h2>
-						<div class="col-md-6">
+						<div class="col-lg-8">
 							<div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
 							  <strong>Terimakasih!</strong> Pesan anda telah terkirim.
 							  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -260,6 +200,9 @@
 								</button>
 							</form>
 						</div>
+						<div class="col-lg">
+					    	<iframe class="darigoogle" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTTCrpvRIcO0d_N7813s04JDfGAcS3r-M1_s8cmCuKpc2Nv_EqgIcYWyzNaNaZoq6ci0f6dXZK5OkPZ/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+					    </div>
 					</div>
 			    </div>
 			  </div>
@@ -296,31 +239,80 @@
 		</div>
 	</section>
 
-	<!-- catalog -->
-	<section id="catalog" class="content pt-5">
+	<!-- gallery -->
+	<section id="gallery" class="content pt-5">
 		<div class="container">
-			<h2 class="display-5 text-center">Catalog</h2>
-			<p class="text-center">Koleksi Produk Eferes Merchandise</p>
-			<div class="line mb-5"></div>
-			<div class="row justify-content-center">
-
+			<h2 class="display-5 text-center">Gallery</h2>
+			<p class="text-center">Produk Merchandise & Project Yang Dibuat</p>
+			<div class="row text-center">
+				<div class="col" id="umpetke-portofolio-munculke-merchandise" onclick="aktifkanMerchandise()"><h4>Merchandise</h4></div>
+				<div class="col" id="umpetke-merchandise-munculke-portofolio" onclick="aktifkanPortofolio()" style="color:rgb(173, 173, 173 );"><h4>Portofolio</h4></div>
+			</div>
+			<div class="line mb-3"></div>
+			<div class="row justify-content-center portofolio" id="portofolio">
+				<input class="form-control searchbar mb-3" type="search" placeholder="Ketik untuk mencari Portofolio" aria-label="Search" style="border: none; background-color: rgba(255, 255, 255, 0);">
+				<div class="col-md-3 mb-3">
+					<div class="card" style="height: 22rem;">
+					  <img src="https://source.unsplash.com/1600x900/?gamepad" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title">Eferes Game Enviro</h5>
+						<p class="card-text">Game Berbasis WEB yang dapat memancing emosi. Berani coba?</p>
+						<a href="https://risproject.github.io/game/" class="btn btn-primary tombol">Kunjungi</a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-3 mb-3">
+					<div class="card" style="height: 22rem;">
+					  <img src="https://source.unsplash.com/1600x900/?student" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title">FEC | Faaris Education Center</h5>
+					    <p class="card-text">App E-Learning modern untuk pembelajaran jarak jauk lebih interaktif</p>
+					    <a href="https://risproject.github.io/fec/" class="btn tombol btn-primary">Kunjungi</a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-3 mb-3">
+					<div class="card" style="height: 22rem;">
+					  <img src="https://source.unsplash.com/1600x900/?system,computer" class="card-img-top" alt="...">
+					  <div class="card-body">
+					    <h5 class="card-title">Ulitimate Screto Site</h5>
+						<p class="card-text">Website mengirim pesan secara rahasia mirip screto site tetapi buatan saya sendiri 😎 ngoding bro...</p>
+						<a href="https://risproject.github.io/ultimatess/" class="btn btn-primary tombol">Kunjungi</a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-3 mb-3">
+					<div class="card" style="height: 22rem;">
+					  <img src="https://risproject.github.io/ruangbk/img/gambar.jpg" class="card-img-top" alt="yahaha gak keluar gambar">
+					  <div class="card-body">
+					    <h5 class="card-title">RuangBK Care</h5>
+						<p class="card-text">Web App untuk mencukupi kebutuhan <strong>Rohani dan Psikologi</strong> anda</p>
+						<a href="https://risproject.github.io/ruangbk/" class="btn btn-primary tombol">Kunjungi</a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-6">
+			    	<iframe class="darigoogle" src="https://docs.google.com/document/d/e/2PACX-1vRz_Y-OjmgUqpnmhmvU3KUtUJle-GDCQfjt7fp3FWGkUigxKSOp3hYyiMg6-XxXhsai7TZA71aKTm9I/pub?embedded=true"></iframe>
+			    </div>
+			</div>
+			<div class="row justify-content-center merchandise mt-5" id="merchandise">
 				<!-- display&triger -->
 				<div class="col-md-3 col-6 mb-3">
-					<div class="catalog-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-					  <img src="img/produk1.jpg" class="card-img-top" alt="Catalog 1">
+					<div class="gallery-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+					  <img src="img/produk1.jpg" class="card-img-top" alt="gallery 1">
 					</div>
 				</div>
 				<!-- popup -->
 				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog modal-dialog-centered">
-				    <div class="modal-content catalog-card">
+				    <div class="modal-content gallery-card">
 				      <div class="modal-header">
 				        <h5 class="modal-title" id="exampleModalLabel">Produk 1</h5>
 				        <button type="button" class="btn btn-danger tombol" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
 				      </div>
 				      <div class="row modal-body">
 				        <div class="col-md text-center">
-				       		<img src="img/produk1.jpg" class=" pb-3" alt="Catalog 1" style="width:285px;">
+				       		<img src="img/produk1.jpg" class=" pb-3" alt="gallery 1" style="width:285px;">
 				        </div>
 				        <div class="col-md">
 				        	<h5>Lukisan Tampan dan Berani</h5>
@@ -337,21 +329,21 @@
 
 				<!-- display&triger -->
 				<div class="col-md-3 col-6 mb-3">
-					<div class="catalog-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModa2">
-					  <img src="img/produk2.jpg" class="card-img-top" alt="Catalog 1">
+					<div class="gallery-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModa2">
+					  <img src="img/produk2.jpg" class="card-img-top" alt="gallery 1">
 					</div>
 				</div>
 				<!-- popup -->
 				<div class="modal fade" id="exampleModa2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog modal-dialog-centered">
-				    <div class="modal-content catalog-card">
+				    <div class="modal-content gallery-card">
 				      <div class="modal-header">
 				        <h5 class="modal-title" id="exampleModalLabel">Produk 2</h5>
 				        <button type="button" class="btn btn-danger tombol" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
 				      </div>
 				      <div class="row modal-body">
-				        <div class="col-md text-center catalog-card">
-				       		<img src="img/produk2.jpg" class=" pb-3" alt="Catalog 2" style="width:285px;">
+				        <div class="col-md text-center gallery-card">
+				       		<img src="img/produk2.jpg" class=" pb-3" alt="gallery 2" style="width:285px;">
 				        </div>
 				        <div class="col-md">
 				        	<h5>Lampu Meja - Desk Lamp </h5>
@@ -368,21 +360,21 @@
 
 				<!-- display&triger -->
 				<div class="col-md-3 col-6 mb-3">
-					<div class="catalog-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModa3">
-					  <img src="img/produk3.jpg" class="card-img-top" alt="Catalog 3">
+					<div class="gallery-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModa3">
+					  <img src="img/produk3.jpg" class="card-img-top" alt="gallery 3">
 					</div>
 				</div>
 				<!-- popup -->
 				<div class="modal fade" id="exampleModa3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog modal-dialog-centered">
-				    <div class="modal-content catalog-card">
+				    <div class="modal-content gallery-card">
 				      <div class="modal-header">
 				        <h5 class="modal-title" id="exampleModalLabel">Produk 3</h5>
 				        <button type="button" class="btn btn-danger tombol" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
 				      </div>
 				      <div class="row modal-body">
-				        <div class="col-md text-center catalog-card">
-				       		<img src="img/produk3.jpg" class=" pb-3" alt="Catalog 3" style="width:285px;">
+				        <div class="col-md text-center gallery-card">
+				       		<img src="img/produk3.jpg" class=" pb-3" alt="gallery 3" style="width:285px;">
 				        </div>
 				        <div class="col-md">
 				        	<h5>Ceret Aladin tidak ajaib</h5>
@@ -399,21 +391,21 @@
 
 				<!-- display&triger -->
 				<div class="col-md-3 col-6 mb-3">
-					<div class="catalog-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModa4">
-					  <img src="img/produk4.jpg" class="card-img-top" alt="Catalog 4">
+					<div class="gallery-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModa4">
+					  <img src="img/produk4.jpg" class="card-img-top" alt="gallery 4">
 					</div>
 				</div>
 				<!-- popup -->
 				<div class="modal fade" id="exampleModa4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog modal-dialog-centered">
-				    <div class="modal-content catalog-card">
+				    <div class="modal-content gallery-card">
 				      <div class="modal-header">
 				        <h5 class="modal-title" id="exampleModalLabel">Produk 4</h5>
 				        <button type="button" class="btn btn-danger tombol" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
 				      </div>
 				      <div class="row modal-body">
-				        <div class="col-md text-center catalog-card">
-				       		<img src="img/produk4.jpg" class=" pb-3" alt="Catalog 2" style="width:285px;">
+				        <div class="col-md text-center gallery-card">
+				       		<img src="img/produk4.jpg" class=" pb-3" alt="gallery 2" style="width:285px;">
 				        </div>
 				        <div class="col-md">
 				        	<h5>Pelet Takari</h5>
@@ -430,21 +422,21 @@
 
 				<!-- display&triger -->
 				<div class="col-md-3 col-6 mb-3">
-					<div class="catalog-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModa5">
-					  <img src="img/produk5.jpg" class="card-img-top" alt="Catalog 5">
+					<div class="gallery-card card" type="button" data-bs-toggle="modal" data-bs-target="#exampleModa5">
+					  <img src="img/produk5.jpg" class="card-img-top" alt="gallery 5">
 					</div>
 				</div>
 				<!-- popup -->
 				<div class="modal fade" id="exampleModa5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog modal-dialog-centered">
-				    <div class="modal-content catalog-card">
+				    <div class="modal-content gallery-card">
 				      <div class="modal-header">
 				        <h5 class="modal-title" id="exampleModalLabel">Produk 5</h5>
 				        <button type="button" class="btn btn-danger tombol" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
 				      </div>
 				      <div class="row modal-body">
-				        <div class="col-md text-center catalog-card">
-				       		<img src="img/produk5.jpg" class=" pb-3" alt="Catalog 2" style="width:285px;">
+				        <div class="col-md text-center gallery-card">
+				       		<img src="img/produk5.jpg" class=" pb-3" alt="gallery 2" style="width:285px;">
 				        </div>
 				        <div class="col-md">
 				        	<h5>Buku - Eferes Prestige</h5>
@@ -452,7 +444,7 @@
 				        </div>
 				      </div>
 				      <div class="modal-footer">
-				      	<span>̶[R̶̶p̶̶.̶̶ ̶̶1̶̶2̶̶.̶̶5̶̶4̶̶0̶] Free <strong>Rp.0</strong></span>
+				      	<span>R̶̶p̶̶.̶̶ ̶̶1̶̶2̶̶.̶̶5̶̶4̶̶0̶  <strong>Rp.0</strong></span>
 				      	<a href="https://github.com/risproject/risproject.github.io/raw/master/Files/Eferes%20Prestige%202022.epub" type="button" class="btn btn-primary tombol">Dapatkan</a>
 				      </div>
 				    </div>
@@ -462,50 +454,40 @@
 			</div>
 		</div>
 	</section>
-	<!-- akhir catalog -->
+	<!-- akhir gallery -->
 
 	<!-- About -->
 	<section id="about" class="content pt-5">
 			<div class="container text-center">
 				<h2 class="display-5 text-center">About</h2>
-				<p class="text-center">CEO, Staff, & Kerjasama Faaris Catalog</p>
+				<p class="text-center">CEO, Staff, & Kerjasama EFERES.ID</p>
 				<div class="line mb-5"></div>
-				<div class="slider">
-				  <div class="slides">
-				  	<div class="profile" data-aos="fade-left" data-aos-offset="20">
-				  		<img src="img/presiden1.jpg" class="rounded-circle mb-3">
-						<h4>Prof. Dr. Faaris Muwaffaq</h4>
-						<p>CEO Faaris Eferes</p>
-				  	</div>
-				  	<div class="profile" data-aos="fade-left" data-aos-delay="100" data-aos-offset="20">
-				  		<img src="img/profile.jpeg" class="rounded-circle mb-3">
-						<h4>Prof. Faaris Muwaffaq</h4>
-						<p>CEO Faaris Education Center</p>
-				  	</div>
-				  	<div class="profile" data-aos="fade-left" data-aos-delay="200" data-aos-offset="20">
-				  		<img src="img/profile1.jpg" class="rounded-circle mb-3">
-						<h4>Syech Faaris Muwaffaq</h4>
-						<p>CEO RuangBK Care</p>
-				  	</div>
-				  	<div class="profile" data-aos="fade-left" data-aos-delay="300" data-aos-offset="20">
-				  		<img src="img/profile2.jpg" class="rounded-circle mb-3">
-						<h4>Dr. Faaris Muwaffaq</h4>
-						<p>Staff Khusus IT</p>
-				  	</div>
-				  	<div class="profile" data-aos="fade-left" data-aos-delay="400" data-aos-offset="20">
-				  		<img src="img/profile3.jpg" class="rounded-circle mb-3">
-						<h4>Faaris Muwaffaq, S.Mb.</h4>
-						<p>Staff Khusus Biznis</p>
-				  	</div>
-				  </div>
+				<div class="figure">
+					<li class="profile mb-3" data-aos="fade-left" data-aos-offset="20">
+						<img src="img/presiden1.jpg" class="rounded-circle">
+					</li>
+					<li class="profile mb-3" data-aos="fade-left" data-aos-delay="100" data-aos-offset="20">
+						<img src="img/profile.jpeg" class="rounded-circle">
+					</li>
+					<li class="profile-c mb-3" data-aos="fade-left" data-aos-delay="300" data-aos-offset="20">
+						<img src="img/profile1.jpg" class="rounded-circle">
+					</li>
+					<li class="profile mb-3" data-aos="fade-left" data-aos-delay="400" data-aos-offset="20">
+						<img src="img/profile2.jpg" class="rounded-circle">
+					</li>
+					<li class="profile mb-3" data-aos="fade-left" data-aos-delay="600" data-aos-offset="20">
+						<img src="img/profile3.jpg" class="rounded-circle">
+					</li>
 				</div>
+				<p class="fst-italic">"lebih baik bersedekah banyak tetapi ikhlas, daripada sedikit tetapi tidak ikhlas"</p>
+				<H5>~Syech Faaris M</H5>
 			</div>
 	</section>
 	<!-- akhir About-->
 
 	<!-- footer -->
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#3f3f3f" fill-opacity="1" d="M0,224L20,208C40,192,80,160,120,154.7C160,149,200,171,240,197.3C280,224,320,256,360,261.3C400,267,440,245,480,229.3C520,213,560,203,600,208C640,213,680,235,720,245.3C760,256,800,256,840,224C880,192,920,128,960,117.3C1000,107,1040,149,1080,186.7C1120,224,1160,256,1200,272C1240,288,1280,288,1320,261.3C1360,235,1400,181,1420,154.7L1440,128L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
-		<footer class="text-white text-center pb-3">
+		<svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 250" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(121, 83, 212, 1)" offset="0%"></stop><stop stop-color="rgba(0, 97, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,200L21.8,166.7C43.6,133,87,67,131,70.8C174.5,75,218,150,262,175C305.5,200,349,175,393,141.7C436.4,108,480,67,524,54.2C567.3,42,611,58,655,83.3C698.2,108,742,142,785,145.8C829.1,150,873,125,916,125C960,125,1004,150,1047,137.5C1090.9,125,1135,75,1178,45.8C1221.8,17,1265,8,1309,25C1352.7,42,1396,83,1440,87.5C1483.6,92,1527,58,1571,75C1614.5,92,1658,158,1702,175C1745.5,192,1789,158,1833,137.5C1876.4,117,1920,108,1964,104.2C2007.3,100,2051,100,2095,112.5C2138.2,125,2182,150,2225,154.2C2269.1,158,2313,142,2356,120.8C2400,100,2444,75,2487,75C2530.9,75,2575,100,2618,95.8C2661.8,92,2705,58,2749,66.7C2792.7,75,2836,125,2880,129.2C2923.6,133,2967,92,3011,83.3C3054.5,75,3098,100,3120,112.5L3141.8,125L3141.8,250L3120,250C3098.2,250,3055,250,3011,250C2967.3,250,2924,250,2880,250C2836.4,250,2793,250,2749,250C2705.5,250,2662,250,2618,250C2574.5,250,2531,250,2487,250C2443.6,250,2400,250,2356,250C2312.7,250,2269,250,2225,250C2181.8,250,2138,250,2095,250C2050.9,250,2007,250,1964,250C1920,250,1876,250,1833,250C1789.1,250,1745,250,1702,250C1658.2,250,1615,250,1571,250C1527.3,250,1484,250,1440,250C1396.4,250,1353,250,1309,250C1265.5,250,1222,250,1178,250C1134.5,250,1091,250,1047,250C1003.6,250,960,250,916,250C872.7,250,829,250,785,250C741.8,250,698,250,655,250C610.9,250,567,250,524,250C480,250,436,250,393,250C349.1,250,305,250,262,250C218.2,250,175,250,131,250C87.3,250,44,250,22,250L0,250Z"></path></svg>
+		<footer class="text-white text-center pt-1 pb-1">
 			<small>Created With Ngoding Dewe by:<a href="https://www.instagram.com/faaris_mwf/" class="text-white fw-bold"> Faaris Muwaffaq</a> </small>
 		</footer>
 	<!-- akhir footer -->
@@ -517,6 +499,45 @@
 		})
 	</script>
 	<!-- akhir loader -->
+
+	<!-- switch menu -->
+		<script type = "text/javascript" language = "javascript">
+         $(".portofolio").hide();
+         $(document).ready(function() {
+ 
+            $("#umpetke-portofolio-munculke-merchandise").click(function () {
+               $(".merchandise").show( 1000 );
+               $(".portofolio").hide( 1000 );
+            });
+ 
+            $("#umpetke-merchandise-munculke-portofolio").click(function () {
+               $(".merchandise").hide( 1000 );
+               $(".portofolio").show( 1000 );
+            });
+				
+         });
+      </script>
+      <script>
+		function aktifkanMerchandise() {
+		    document.getElementById("umpetke-portofolio-munculke-merchandise").style.color = "inherit";
+		    document.getElementById("umpetke-merchandise-munculke-portofolio").style.color = "rgb(173, 173, 173 )";
+		}
+		function aktifkanPortofolio() {
+			document.getElementById("umpetke-portofolio-munculke-merchandise").style.color = "rgb(173, 173, 173 )";
+		    document.getElementById("umpetke-merchandise-munculke-portofolio").style.color = "inherit";
+		}
+	  </script>
+	<!-- akhir switch menu -->
+
+	<!-- searchbar -->
+	<script>
+		$(".searchbar").on("keyup", function() {
+			$(".row .card").filter(function() {
+				$(this).toggle($(this).text().toLowerCase().indexOf($(".searchbar").val().toLowerCase()) > -1);
+			});
+		});
+	</script>
+	<!-- akhir searchbar -->
 	
 	<!-- save google sheet -->
 	<script>
@@ -587,19 +608,6 @@
 		}
 	</script>
 	<!-- akhir local storage -->
-
-	<!-- tilt effect -->
-	<script type="text/javascript" src="vanilla-tilt.min.js"></script>
-	<script type="text/javascript">
-		VanillaTilt.init(document.querySelectorAll(".tilt-effect"), {
-			max: 30,
-			speed: 600,
-			glare: true,
-			reverse: true,
-			"max-glare": 1,
-		});
-	</script>
-	<!-- akhir tilt effect -->
 
 	<!-- animasi -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
