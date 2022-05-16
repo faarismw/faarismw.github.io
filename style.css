@@ -13,7 +13,7 @@
 		.nav-link:hover::after {
 			content: '';
 			display: block;
-			border-bottom: 3px solid #0E60D8;
+			border-bottom: 3px solid #2980B9;
 			width: 75%;
 			margin: auto;
 			margin-bottom: -3px;
@@ -60,11 +60,17 @@ body.darkmode .modal-content{
 body.darkmode .card-body, body.darkmode .card{
 	background-color: #1b1b1b;
 }
+body.darkmode .searchbar{
+	background-color: #1b1b1b !important;
+}
 body.darkmode .lightbtn{
 	visibility: visible;
 }
 body.darkmode .icon p{
 	color: rgb(227, 227, 227) !important;
+}
+body.darkmode .line{
+	border-color: rgb(227, 227, 227) !important;
 }
 .lightbtn{
 	visibility: hidden;
@@ -158,7 +164,7 @@ body.darkmode .icon p{
 	.darigoogle {
 		width: 100%;
 		height: 50vh;
-		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 		transition: 0.25s;
 	}
 	.darigoogle:hover{
@@ -197,7 +203,7 @@ body.darkmode .icon p{
 		border-radius: 12px;
 	}
 	.card {
-		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 		margin-bottom: 10px;
 		border-radius: 12px;
 		transition: 0.25s;
@@ -208,15 +214,14 @@ body.darkmode .icon p{
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	}
 	.modal{
-		backdrop-filter: blur(20px);
-		background: rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(10px);
+		background: rgba(0, 0, 0, 0.5);
 	}
 	.modal-content{
 		background-color: rgba(255, 255, 255, 0.8);
 		backdrop-filter: blur(20px);
 		border-radius: 12px;
-		border: 3px solid;
-		border-color: rgba(255, 255, 255, 0.25);
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	}
 
 /*staff*/
@@ -287,9 +292,10 @@ footer {
 /*Utility*/
 	.tombol {
 		border-radius: 15px;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	}
 	.btn-primary, .primary{
-		background: #0E60D8;
+		background: #3382E2;
 	}
 	.tombol-kaca {
 		background-color: rgba(255, 255, 255, 0.25);
@@ -372,7 +378,7 @@ footer {
 		background-color: rgba(255, 255, 255, 0.6);
 		padding: 20px;
 		border-radius: 25px;
-		box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	}
 	.loading {
 		 --speed-of-animation: 0.9s;
@@ -442,9 +448,6 @@ footer {
 			top: 10px;
 			border-radius: 12px;
 		}
-		.searchbar{
-			max-width: 92%;
-		}
 		.jumbotron {
 			margin-top: 0px;
 			height: 350px;
@@ -467,6 +470,9 @@ footer {
 			font-size: 15px;
 			color: #303030;
 			font-weight: 200;
+		}
+		.maintenance{
+			padding-top: 10px;
 		}
 	}
 /*akhir mobile

@@ -63,10 +63,10 @@
 		  	<h1 class="display-6" style=" transform: translateY(15px);">Hi <span>Hallo,</span> </h1> 
 		  	<p>Selamat datang di Eferes Enviro</p>
 			<a href="#gallery" class="btn tombol-kaca ">Explore Now!</a>
-			<button class="btn text-white" id="theme">
+			<button class="btn" id="theme">
 			    <span onclick="setDarkMode(true)" id="darkBtn" class="">  <i class="far fa-moon"></i> </span>
 			    <span onclick="setDarkMode(false)" id="lightBtn" class="lightbtn"> <i class="far fa-lightbulb"></i> </span>
-			</button class="btn tombol-kaca">
+			</button class="btn">
 		</div>
 		</div>
 	</div>
@@ -85,7 +85,7 @@
 					</div>
 					<div class="col-md col-4">
 						<div class="icon mt-2">
-							<button class="btn tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #0E60D8;"><i class="bi bi-compass text-white"></i></button>
+							<button class="btn tmenu" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #3382E2;"><i class="bi bi-compass text-white"></i></button>
 							<p>Info</p>
 						</div>
 					</div>
@@ -109,7 +109,7 @@
 					</div>
 					<div class="col-md col-4">
 						<div class="icon mt-2">
-							<a href="#more"><button class="btn tmenu" style="background-color: #2761D0;"><i class="bi bi-layers text-white"></i></button></a>
+							<a href="#more"><button class="btn tmenu" style="background-color: #2761D0"><i class="bi bi-layers text-white"></i></button></a>
 							<p>See More</p>
 						</div>
 					</div>
@@ -172,7 +172,8 @@
 						<div class="col-md-6 informasi">
 							<h2 class="pt-3 display-5">Terimakasih telah mengunjungi <span>Eferes Enviro</span></h2>
 							<p class="pt-2">Untuk paid promote di Instagram / Youtube hubungi melalui DM atau melalui Email: faaris.muwaffaq@gmail.com <strong>klik "My Profiles" untuk melihat Profile & "Portofolio" untuk melihat project saya</strong></p>
-							<a class="btn btn-primary tombol text-white" href="profiles.html">My Profiles</a>
+							<a class="btn btn-primary tombol text-white" href="profiles.html"><i class="bi bi-person"></i> My Profiles</a>
+							<a class="btn btn-primary tombol text-white mx-1" href="maintenance.html"><i class="bi bi-file-earmark-richtext"></i> Articles</a>
 						</div>
 					</div>
 			    </div>
@@ -200,7 +201,7 @@
 								  <label for="pesan" class="form-label">Pesan</label>
 								  <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
 								</div>
-								<button type="submit" class="tombol btn btn-primary mt-3 mb-3 btn-kirim">Kirim</button>
+								<button type="submit" class="tombol btn btn-primary mt-3 mb-3 btn-kirim"><i class="bi bi-send"></i> Kirim</button>
 								<button class="tombol btn btn-primary btn-loading d-none mt-3 mb-3" type="button" disabled>
 									<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
 									Loading...
@@ -250,12 +251,13 @@
 			<p class="text-center">Produk Merchandise & Project Yang Dibuat</p>
 			<div class="row text-center">
 				<div class="col" id="umpetke-portofolio-munculke-merchandise" onclick="aktifkanMerchandise()"><h4>Merchandise</h4></div>
-				<div class="col" id="umpetke-merchandise-munculke-portofolio" onclick="aktifkanPortofolio()" style="color:rgb(173, 173, 173 );"><h4>Portofolio</h4></div>
+				<div class="col" id="umpetke-merchandise-munculke-portofolio" onclick="aktifkanPortofolio()" style="color:rgb(173, 173, 173 );"><h4>Project</h4></div>
 			</div>
 			<div class="line mb-3"></div>
+			<div class="col-lg portofolio" id="portofolio">
+				<input class="form-control searchbar mb-3" type="search" placeholder="🔎 Ketik untuk mencari Project" aria-label="Search" style="border: none; box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;">
+			</div>
 			<div class="row justify-content-center portofolio" id="portofolio">
-				<input class="form-control searchbar mb-3" type="search" placeholder="Ketik untuk mencari Portofolio" aria-label="Search" style="border: none; background-color: rgba(255, 255, 255, 0);">
-				
 				<div class="col-md-3 mb-3">
 					<div class="card">
 					  <img src="https://source.unsplash.com/1600x900/?gamepad" class="card-img-top" alt="...">
@@ -489,7 +491,7 @@
 
 	<!-- footer -->
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#2761D0" fill-opacity="1" d="M0,64L24,58.7C48,53,96,43,144,80C192,117,240,203,288,202.7C336,203,384,117,432,96C480,75,528,117,576,154.7C624,192,672,224,720,213.3C768,203,816,149,864,149.3C912,149,960,203,1008,234.7C1056,267,1104,277,1152,250.7C1200,224,1248,160,1296,138.7C1344,117,1392,139,1416,149.3L1440,160L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
-		<section id="more" class="content pb-3" style="background-color:#2761D0;">
+		<section id="more" class="content" style="background-color:#0E60D8;">
 			<div class="container">
 				<h2 class="display-5 text-center text-white mb-5">See More</h2>
 				<div class="accordion" id="accordionPanelsStayOpenExample">
@@ -521,23 +523,18 @@
 				      </div>
 				    </div>
 				  </div>
-				  <div class="accordion-item mb-2">
-				    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-				      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-				        Random Text
-				      </button>
-				    </h2>
-				    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-				      <div class="accordion-body">
-				        <iframe class="darigoogle" src="https://docs.google.com/document/d/e/2PACX-1vTC1yoOB_LFCdLHs_rn_j8qQrgYyNthNGxR4nsdrfJCXinKpTxZ3v5li29xGCD8f0hUXFeblxyTHDUA/pub?embedded=true"></iframe>
-				      </div>
-				    </div>
-				  </div>
+				</div>
+				<div class="col-lg justify-content-center text-center py-2">
+					<a class="btn btn-primary tombol text-white my-1" href="https://web.facebook.com/faris.muwaffaq.37"><i class="bi bi-facebook"></i> <small>Facebook</small></a>
+					<a class="btn btn-primary tombol text-white my-1" href="https://www.instagram.com/faaris_mwf/"><i class="bi bi-instagram"></i> <small>Instagram</small></a>
+					<a class="btn btn-primary tombol text-white my-1" href="https://www.youtube.com/channel/UClfJUrLWJ5vd7pmALNVUtbg"><i class="bi bi-youtube"></i> <small>Youtube</small></a>
+					<a class="btn btn-primary tombol text-white my-1" href="#"><i class="bi bi-discord"></i> <small>Discord</small></a>
+					<a class="btn btn-primary tombol text-white my-1" href="https://t.me/Faaris_mw"><i class="bi bi-send-fill"></i> <small>Telegram</small></a>
 				</div>
 			</div>
 		</section>
 		<footer class="text-white text-center pt-1 pb-1">
-			<small>Created With Ngoding Dewe by:<a href="https://www.instagram.com/faaris_mwf/" class="text-white fw-bold"> Faaris Muwaffaq</a> </small>
+			<small>Created With Ngoding Dewe by:<a href="https://www.instagram.com/faaris_mwf/" class="text-white fw-bold" style="text-decoration:none;"> Faaris Muwaffaq</a> </small>
 		</footer>
 	<!-- akhir footer -->
 
