@@ -52,11 +52,10 @@
 			</div>
 			<div class="row mt-5">
 				<div class="col-md-6 my-auto" style="text-align:justify;">
-					<form class="lorem-form">
-						<div class="d-flex bd-highlight">
-							<input type="number" class="form-control mx-1" name="amount" id="amount" placeholder="Jumlah paragraf Max-6"">
-							<div class="p-2 bd-highlight"><button type="submit" class="btn btn-primary tombol mx-1">Munculkan</button></div>
-						</div>
+					<label for="amount" class="form-label">Masukkan Jumlah Paragraf misal: 2</label>
+					<form class="lorem-form input-group mb-3">
+						<input type="number" class="form-control" name="amount" id="amount" placeholder="Jumlah paragraf Max-6">
+						<button type="submit" class="btn btn-primary tombol-1">Munculkan</button>
 					</form>
 					<article class="lorem-text mt-3"></article>
 				</div>
@@ -73,15 +72,12 @@
 							</div>
 							<form name="your-response">
 							  <div class="mt-3">
-							    <label for="name" class="form-label">Nama Lengkap</label>
-							    <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
+							    <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" placeholder="Nama Lengkap">
 							  <div class="mt-3">
-							    <label for="email" class="form-label">Email</label>
-							    <input type="email" class="form-control" id="email" aria-describedby="email" name="email">
+							    <input type="email" class="form-control" id="email" aria-describedby="email" name="email" placeholder="Email">
 							  </div>
 							  	<div class="mt-3">
-								  <label for="pesan" class="form-label">Pesan</label>
-								  <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+								  <textarea class="form-control" id="pesan" rows="3" name="pesan" placeholder="Pesan"></textarea>
 								</div>
 								<button type="submit" class="tombol btn btn-primary mt-3 mb-3 btn-kirim"><i class="bi bi-send"></i> Kirim</button>
 								<button class="tombol btn btn-primary btn-loading d-none mt-3 mb-3" type="button" disabled>

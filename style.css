@@ -60,7 +60,7 @@ body.darkmode .modal-content{
 body.darkmode .card-body, body.darkmode .card{
 	background-color: #1b1b1b;
 }
-body.darkmode .searchbar{
+body.darkmode .form-control{
 	background-color: #1b1b1b !important;
 }
 body.darkmode .lightbtn{
@@ -135,7 +135,7 @@ body.darkmode .line{
 		width: 45px;
 		height: 45px;
 		border-radius: 12px;
-		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
 		background-color: white;
 		border: none;
 		transition: 0.25s;
@@ -164,7 +164,7 @@ body.darkmode .line{
 	.darigoogle {
 		width: 100%;
 		height: 50vh;
-		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
 		transition: 0.25s;
 	}
 	.darigoogle:hover{
@@ -203,7 +203,7 @@ body.darkmode .line{
 		border-radius: 12px;
 	}
 	.card {
-		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
 		margin-bottom: 10px;
 		border-radius: 12px;
 		transition: 0.25s;
@@ -254,7 +254,7 @@ body.darkmode .line{
 		background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
 		backdrop-filter: blur(20px);
 		margin: 20px;
-		border-radius: 25px;
+		border-radius: 20px;
 	}
 	.personal-info p {
 		padding: 0;
@@ -290,8 +290,17 @@ footer {
 }
 
 /*Utility*/
+	.form-control{
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+		border-radius: 12px;
+		border: none;
+	}
 	.tombol {
-		border-radius: 15px;
+		border-radius: 20px;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	}
+	.tombol-1 {
+		border-radius: 12px;
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	}
 	.btn-primary, .primary{
@@ -300,7 +309,7 @@ footer {
 	.tombol-kaca {
 		background-color: rgba(255, 255, 255, 0.25);
 		backdrop-filter: blur(20px);
-		border-radius: 15px;
+		border-radius: 20px;
 		border: none;
 		color: white;
 		border: 2px solid;
@@ -309,9 +318,6 @@ footer {
 	.tombol-kaca:hover {
 		background-color: rgba(255, 255, 255, 0.1);
 		color: white;
-	}
-	.form-control{
-		border-radius: 10px;
 	}
 	.dropdown-menu {
 		border-radius: 12px;
@@ -380,7 +386,7 @@ footer {
 	.bg-loader .kotak {
 		background-color: rgba(255, 255, 255, 0.6);
 		padding: 20px;
-		border-radius: 25px;
+		border-radius: 20px;
 		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 	}
 	.loading {
