@@ -1,0 +1,63 @@
+/*Desktop*/
+@media screen and (min-width: 768px) {
+    .bounceUp{
+        display: none;
+    }
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    position: fixed !important;
+    z-index: 999;
+    height: 55px !important;
+}
+
+.navbar-fixed {
+    background-color: rgba( 255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(20px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.menu-active > span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.menu-active > span:nth-child(2) {
+    transform: scale(0);
+}
+
+.menu-active > span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+.material-symbols-outlined{
+    padding-right: 5px;
+}
+
+
+/* utility */
+.bg-gradient{
+    background: linear-gradient(to right top, #0E60D8, #3382E2);
+}
+.bg-glass{
+    background-color: rgba( 255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+}
+
+/*Mobile*/
+@media screen and (max-width: 768px) {
+    header{
+        margin: 10px 10px 0 10px;
+        border-radius: 16px;
+    }
+    nav{
+        border-radius: 16px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .start{
+        display: none;
+    }
+}
+/*akhir mobile
