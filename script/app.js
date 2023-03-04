@@ -1,20 +1,12 @@
 
 //navbar
 const menu = document.querySelector('#menu')
-const navMenu = document.querySelector('#nav-menu')
+const navMenu = document.querySelector('nav')
 
 menu.addEventListener('click', function() {
     menu.classList.toggle('menu-active')
     navMenu.classList.toggle('hidden')
 });
-
-//klik menu
-window.addEventListener('click' , function(e) {
-  if(e.target != menu && e.target != navMenu){
-    menu.classList.remove('menu-active')
-    navMenu.classList.add('hidden')
-  }
-})
 
 // navbar scroll
 window.onscroll = function () {
