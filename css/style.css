@@ -3,6 +3,30 @@
     .bounceUp{
         display: none;
     }
+    .colase-bg {
+        animation: zoom1 1s;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+      }
+      @keyframes zoom1 {
+        0% {
+          transform: scale(4);
+        }
+        25% {
+            transform: scale(30);
+        }
+        50% {
+            transform: scale(100);
+        }
+        75% {
+            transform: scale(100);
+        }
+        100% {
+            transform: scale(100);
+        }
+      }
 }
 
 body {
@@ -15,10 +39,14 @@ header{
     height: 55px !important;
 }
 
+button{
+    outline: none !important;
+}
+
 .navbar-fixed {
-    background-color: rgba( 255, 255, 255, 0.75) !important;
     backdrop-filter: blur(20px);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: rgba( 255, 255, 255, 0.75);
 }
 
 .menu-active > span:nth-child(1) {
@@ -32,24 +60,32 @@ header{
 .menu-active > span:nth-child(3) {
     transform: rotate(-45deg);
 }
-.material-symbols-outlined{
-    padding-right: 5px;
-}
-
-
-/* utility */
-.bg-gradient{
-    background: linear-gradient(to right top, #0E60D8, #3382E2);
-}
-.bg-glass{
-    background-color: rgba( 255, 255, 255, 0.75);
-    backdrop-filter: blur(10px);
-}
+.curve {
+    animation: zoom 1s;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+  }
+  #darkMode:checked ~ label div.toogle-circle {
+    transform: translateX(12px);
+  } 
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+        transform: scale(3);
+    }
+    100% {
+        transform: scale(6);
+    }
+  }
 
 /*Mobile*/
 @media screen and (max-width: 768px) {
     header{
-        margin: 10px 10px 0 10px;
+        margin: 10px;
         border-radius: 16px;
     }
     nav{
@@ -57,7 +93,34 @@ header{
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
     .start{
-        display: none;
+        display: none !important;
     }
+    .portofolio-text{
+        display: none !important;
+    }
+    .colase-bg {
+        animation: zoom1 1s;
+        animation-play-state: paused;
+        animation-delay: calc(var(--scroll) * -1s);
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+      }
+      @keyframes zoom1 {
+        0% {
+          transform: scale(1);
+        }
+        25% {
+            transform: scale(8);
+        }
+        50% {
+            transform: scale(50);
+        }
+        75% {
+            transform: scale(100);
+        }
+        100% {
+            transform: scale(100);
+        }
+      }
 }
 /*akhir mobile
