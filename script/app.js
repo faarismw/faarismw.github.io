@@ -62,3 +62,4 @@ const alert = document.querySelector('.alert');
 alertClose.addEventListener('click' , function() {
   alert.classList.toggle('hidden')
 });
+

@@ -15,10 +15,10 @@
           transform: scale(4);
         }
         25% {
-            transform: scale(30);
+            transform: scale(10);
         }
         50% {
-            transform: scale(100);
+            transform: scale(50);
         }
         75% {
             transform: scale(100);
@@ -44,7 +44,7 @@ button{
 }
 
 .navbar-fixed {
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px) !important;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     background-color: rgba( 255, 255, 255, 0.75);
 }
@@ -75,27 +75,23 @@ button{
       transform: scale(1);
     }
     25% {
-        transform: scale(3);
+        transform: scale(4);
     }
     100% {
         transform: scale(6);
     }
   }
-
 /*Mobile*/
 @media screen and (max-width: 768px) {
     header{
         margin: 10px;
-        border-radius: 16px;
+        border-radius: 12px;
     }
     nav{
-        border-radius: 16px;
+        border-radius: 12px;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
     .start{
-        display: none !important;
-    }
-    .portofolio-text{
         display: none !important;
     }
     .colase-bg {
@@ -110,10 +106,10 @@ button{
           transform: scale(1);
         }
         25% {
-            transform: scale(8);
+            transform: scale(5);
         }
         50% {
-            transform: scale(50);
+            transform: scale(40);
         }
         75% {
             transform: scale(100);
@@ -122,5 +118,8 @@ button{
             transform: scale(100);
         }
       }
+    .card p {
+        display: none;
+    }
 }
 /*akhir mobile
